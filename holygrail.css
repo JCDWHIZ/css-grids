@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+ul,
+li {
+  padding: 0;
+  list-style-type: none;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+header {
+  grid-column: span 3;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+nav {
+  border-right: 1px solid #ddd;
+  padding: 30px;
+}
+nav li {
+  text-decoration: underline;
+}
+
+article {
+  padding: 30px;
+  text-align: justify;
+}
+article img {
+  width: 100%;
+}
+article h2 {
+  font-size: 2em;
+  text-align: center;
+}
+
+aside {
+  border-left: 1px solid #ddd;
+  padding: 30px;
+}
+
+footer {
+  border-top: 1px solid #ddd;
+  grid-column: span 3;
+  text-align: center;
+  padding: 30px;
+}
